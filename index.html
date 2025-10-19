@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">2048</h1>
+            <p class="subtitle">Join the tiles, get to 2048!</p>
+        </header>
+
+        <div class="game-info">
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="score-label">SCORE</div>
+                    <div class="score-value" id="score">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">BEST</div>
+                    <div class="score-value" id="best-score">0</div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-secondary" id="new-game-btn">New Game</button>
+                <div class="board-size-control">
+                    <label for="board-size">Board Size:</label>
+                    <select id="board-size">
+                        <option value="3">3x3</option>
+                        <option value="4" selected>4x4</option>
+                        <option value="5">5x5</option>
+                        <option value="6">6x6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="game-board" id="game-board"></div>
+            <div class="game-overlay" id="game-overlay">
+                <div class="overlay-content">
+                    <h2 id="overlay-title">Game Over!</h2>
+                    <p id="overlay-message">Try again to reach 2048!</p>
+                    <button class="btn btn-primary" id="restart-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>How to Play</h3>
+            <ul>
+                <li>Use <strong>arrow keys</strong> or <strong>WASD</strong> to move tiles</li>
+                <li>When two tiles with the same number touch, they <strong>merge into one</strong></li>
+                <li>After each move, a new tile (2 or 4) appears in a random empty spot</li>
+                <li>Try to reach the <strong>2048 tile</strong> to win!</li>
+                <li>Game ends when the board is full and no moves are possible</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
