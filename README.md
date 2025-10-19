@@ -1,8 +1,6 @@
-# 2048 Game
+# 2048 - The Game.
 
 A modern, responsive implementation of the popular 2048 puzzle game built with HTML5, CSS3, and JavaScript. The game features a beautiful gradient design, smooth animations, and supports multiple board sizes.
-
-![2048 Game Screenshot](https://via.placeholder.com/600x400/667eea/ffffff?text=2048+Game)
 
 ## 🎮 Game Overview
 
